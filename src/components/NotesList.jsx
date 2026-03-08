@@ -21,7 +21,8 @@ const NotesList = () => {
             padding: "10px",
             margin: "5px",
             border: "1px solid black",
-            background: selected === note.id ? "yellow" : "white"
+            background: selected === note.id ? "pink" : "white",
+            cursor: "pointer"
           }}
         >
           {note.text}
