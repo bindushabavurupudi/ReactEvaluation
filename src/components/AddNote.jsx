@@ -21,7 +21,17 @@ const AddNote = () => {
     setInput("");
   };
 
-  
+  return (
+    <div>
+      <input
+        ref={inputRef}
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Enter note"
+      />
+      <button onClick={handleAdd}>Add Note</button>
+    </div>
+  );
 };
 
 export default AddNote;
